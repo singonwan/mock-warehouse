@@ -1,0 +1,69 @@
+Esther Kim
+- created class WarehouseManager.java, FaxMachine.java, PickUpRequest.java
+- made unit test for FaxMachine.java
+- Debugged null pointers in WarehouseManager.java
+- Run through the program in the CDF machines
+Phase 2:
+- created and changed code for methods to implement rescan
+- added more test cases for warehouseManagerTest, faxMachineTest
+- fixing checkstyle for code, add more javadoc for new methods
+- changes for code in WarehouseManager
+- more implementation for logging
+==============================================================
+George Wan
+- WareHouse Reader class
+- WareHouseFloor class
+- Location class
+- Truck class
+- Pallet iterator design
+- Created JUnit Tests for Truck
+- Debugged program
+- read arguments from command line
+- change implementation of warehouse reader to take in file
+better for testing
+- change wareHouseFloor from hard code to go through traversal table
+- traversal table will be taken in as second argument
+- overwrite equals method for warehouse
+- method to get amount from a specific rack
+- more testing 
+==============================================================
+Ross West
+Phase 1:
+- Created the worker class, Worker.java
+- Created the worker subclasses: Picker, Sequencer, Loader, and Replenisher.
+- Created Unit Tests for Picker, Sequencer, Loader, and Replenisher
+- Created Unit Tests for Pallet (not really necessary...?)
+- Created Unit Tests for PickUpRequest
+- Created Unit Tests for BarecodeReader
+- Created Unit Tests for WarehouseFloor
+Phase 2:
+- Removed a bunch of static variables
+- Commented a couple of static variables that were not removed
+- Added a few unit tests (particularly for WarehouseSystem)
+- Added Javadoc in some places where it was missing
+- Modified CheckerTest to get one more line of code covered
+- Modified TruckTest to get a bunch more branches covered
+- Fixed a couple of IndexOutOfBoundsException problems in FaxMachineTest
+- Added rescan documentation to help.txt
+==============================================================
+Sharene Thio
+- Created all checkers, BarcodeReader.java, Pallet.java, WarehouseSystem.java
+- Modified workers to work with the BarcodeReader
+- Modified PickUpRequest.java to hold additional information on what stage it is on
+- Edited WarehouseManager.java to interact properly with PickUpRequest, workers and BarcodeReader
+- Created JUnit Tests and ensure all JUnit Tests has been covered
+- Help debug program
+Phase 2:
+- Changed the program so that pickers re-pick when sequencers get the wrong order
+- Created the logger
+- Added logging statements where needed
+- Create a simulation method for sequencer to sequence incorrectly
+- Check javadoc and format for the classes
+- Changed the 16orders.txt
+- Rewrite JUnit Tests to accommodate changes from 16orders.txt
+- Add more Junit Tests
+- Debugged problems in Truck.java
+- Final edit on help.txt
+
+
+==============================================================

@@ -1,0 +1,79 @@
+Order SES Blue
+Order SES Red
+Order SE Black
+Order SE Black
+Picker Alice ready
+Order S Beige
+Order SES Green
+Order SE White
+Picker Alice pick 37
+Order SEL Beige
+Picker Alice pick 38
+Picker Alice pick 21
+Order SE Beige
+Order S Green
+Order SES Green
+Order S White
+Picker Bob ready
+Picker Alice pick 22
+Picker Bob pick 9
+Picker Alice pick 43
+Picker Bob pick 10
+Order SES Black
+Picker Bob pick 29
+Picker Alice pick 44
+Picker Bob pick 34 //Picks wrong one
+Picker Bob pick 34
+Picker Alice pick 43
+Order SE Blue
+Picker Alice pick 44
+Order S Red
+Picker Alice to Marshaling
+Picker Bob pick 35
+Picker Bob pick 15
+Picker Alice ready
+Picker Alice pick 11
+Sequencer Sue sequences true
+Sequencer Sue rejects rescan
+Picker Alice pick 12
+Loader Bill loads
+Loader Bill rejects
+Order S Red
+Picker Bob pick 16
+Picker Alice pick 25
+Picker Bob to Marshaling
+Picker Alice pick 26
+Picker Bob ready
+Picker Alice pick 29
+Picker Bob pick 45
+Picker Bob pick 46
+Picker Alice pick 30
+Picker Bob pick 35
+Sequencer Sue sequences true
+Sequencer Sue rejects rescan
+Picker Bob pick 36
+Picker Alice pick 1
+Loader Bill loads
+Loader Bill rejects
+Picker Alice pick 2
+Picker Bob pick 17
+Picker Alice to Marshaling
+Picker Bob pick 18
+Sequencer Sue sequences false
+Sequencer Sue requests rescan
+Sequencer Sue rescans rescan 
+Sequencer Sue rejects rescan 
+Picker Bob pick 17
+Replenisher Ruby replenish A 1 1 2
+Picker Bob pick 18
+Loader Bill loads
+Loader Bill rejects
+Picker Bob to Marshaling
+Sequencer Sue sequences false
+Sequencer Sue requests rescan
+Sequencer Sue rescans rescan
+Sequencer Sue rejects rescan
+Loader Bill loads
+Loader Bill requests
+Loader Bill rescans
+Loader Bill rejects

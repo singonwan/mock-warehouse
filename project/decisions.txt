@@ -1,0 +1,32 @@
+Design Decisions
+
+WarehouseSystem 
+- created to glue all the classes together instead of the 
+  FaxMachine class since FaxMachine is the class that receives the orders.
+  
+WarehouseManager
+- Queues were implemented to keep track of the stages the 
+  orders are in to make sure they leave in the order they came in.
+- Uses a hashmap to divide the workers by type.
+- RecordOrder method records orders instantaneously when the pickup request is loaded instead
+  of iterating and writing it all after it is loaded. 
+
+WareHouse reader 
+- As a seperate class just to read and write from csv files instead of the WarehouseFloor doing everything
+
+WarehouseFloor:
+- Uses a hashmap as it is straightforward, simple and efficient
+- Keeps track of the state of the warehouse and it is in sync with our
+  main program. (when picker picks, warehousefloors state gets updated etc)
+
+Pallet 
+- Uses iterator design pattern - interface
+
+Checkers
+- Uses inheritance since all three checkers does the same kind of checking but for different stages.
+
+Worker 
+- abstract class and inheritance
+
+
+

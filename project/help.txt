@@ -1,0 +1,35 @@
+INSTRUCTIONS:
+After you have entered the group directory:
+
+(change directory to group_0446/project)  # Change the directory to the project  before the src folder 
+javac -cp src src/project/WarehouseSystem.java # Compile the program (includes all necessary classes) 
+java -cp src project/WarehouseSystem ../16orders.txt ../traversal_table.csv ../translation.csv # Runs the program
+
+
+
+
+PRECONDITIONS:
+- There must be a 16orders.txt, initial.csv, translation.csv and a traversal_table.csv
+- Please add the initial.csv file into the project folder
+
+TO RUN:
+On the command line, the user is expect to pass in 3 arguments in this format:
+	../16orders.txt ../traversal_table.csv ../translation.csv
+that is,
+	file_of_orders  location_of_fascias fascia_information_and_their_SKU
+Relative paths can be taken in.
+
+Format of 16orders.txt:
+- "Order" <model> <colour>
+- "Picker" <name> "ready"                              # happens before any picker picks
+- "Picker" <name> "pick" <SKU>                         # tells picker to pick
+- "Picker" <name> "to Marshaling"                      # tells system the picker is done picking
+- "Sequencer" <name> "sequences" <true/false>          # tells a sequencer to sequence, true for a correct simulation of sequencing, false for an incorrect one
+- "Sequencer" <name> "requests rescan"                 # tells system a sequencer requests a rescan
+- "Sequencer" <name> "rescans rescan"                  # tells system a sequencer is rescanning
+- "Sequencer" <name> "rejects rescan"                  # tells system a sequencer rejects a rescan, throws order out if incorrect. Otherwise, sends it to the loader request
+- "Loader" <name> "loads"                              # tells a loader to load
+- "Loader" <name> "requests"                           # tells system a loader requests a rescan
+- "Loader" <name> "rescans"                            # tells system a loader is rescanning
+- "Loader" <name> "rescans"                            # tells system a loader rejects
+- "Replenisher" <name> "replenish" <A/B 0-1 0-2 0-3>   # tells replenisher to replenish given location
